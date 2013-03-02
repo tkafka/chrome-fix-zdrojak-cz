@@ -1,8 +1,8 @@
 {
-	"name": "SAMPLE_NAME",
+	"name": "Zdrojak.cz - comments without clicking",
 	"version": "0.1",
 	"manifest_version" : 2,
-	"description": "SAMPLE_DESCRIPTION",
+	"description": "Puts zdrojak.cz comments under the article - and hides the social buttons :).",
 	"background" : {
 		"page" : "background.html"
 	},
@@ -12,12 +12,12 @@
 			"19": "icons/19.png",
 			"38": "icons/38.png"
 		},
-		"default_title" : "SAMPLE_TITLE",
+		"default_title" : "SAMPLE TITLE",
 		"default_popup" : "fragments/popup.html"
 	},
 	"content_scripts": [
 	{
-		"matches": ["http://*/*"],
+		"matches": ["http://*.zdrojak.cz/*"],
 		"js": ["lib/jquery-1.8.3.min.js","scripts/main.js"],
 		"run_at": "document_idle"
 	}
