@@ -11,7 +11,7 @@ chrome.extension.sendMessage({}, function(response) {
 
 		if (document.location.hostname == "www.zdrojak.cz") {
 			$('.entry-social').hide();
-			$('.entry-meta').hide();
+			// $('.entry-meta').hide();
 			$('.entry-tags').hide();
 			$('#comments').after($('.entry-serialy'));
 
